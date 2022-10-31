@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Memory Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/october-crow" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <main>
+                <h1 class="mainTitle">Jogo da memoria</h1>
+
+                <select class="select">
+                    <option value="easy">Nível fácil</option>
+                    <option value="medium">Nível médio</option>
+                    <option value="hard">Nível difícil</option>
+                </select>
+
+                <div class="memoryCards">
+                    <div class="cardEasy cardMedium cardHard card" data-framework="doll">
+                        <img class="frontFace" src="img/doll.png">
+                        <h1 class="backFace">?</h1>
+                    </div>
+
+                    <div class="cardEasy cardMedium cardHard card" data-framework="doll">
+                        <img class="frontFace" src="img/doll.png">
+                        <h1 class="backFace">?</h1>
+                    </div>
+
+                    <div class="cardEasy cardMedium cardHard card" data-framework="eye">
+                        <img class="frontFace" src="img/eye.png" id="eyeImg">
+                        <h1 class="backFace">?</h1>
+                    </div>
+
+                    <div class="cardEasy cardMedium cardHard card" data-framework="eye">
+                        <img class="frontFace" src="img/eye.png" id="eyeImg">
+                        <h1 class="backFace">?</h1>
+                    </div>
+
+                    <div class="cardEasy cardMedium cardHard card" data-framework="pumpkin">
+                        <img class="frontFace" src="img/pumpkin.png" id="pumpkinImg">
+                        <h1 class="backFace">?</h1>
+                    </div>
+
+                    <div class="cardEasy cardMedium cardHard card" data-framework="pumpkin">
+                        <img class="frontFace" src="img/pumpkin.png" id="pumpkinImg">
+                        <h1 class="backFace">?</h1>
+                    </div>
+
+                    <div class="cardNotEasy cardMedium cardHard card" data-framework="scarecrow">
+                        <img class="frontFace" src="img/scarecrow.png">
+                        <h1 class="backFace">?</h1>
+                    </div>
+
+                    <div class="cardNotEasy cardMedium cardHard card" data-framework="scarecrow">
+                        <img class="frontFace" src="img/scarecrow.png">
+                        <h1 class="backFace">?</h1>
+                    </div>
+
+                    <div class="cardNotEasy cardMedium cardHard card" data-framework="witch">
+                        <img class="frontFace" src="img/witch.png">
+                        <h1 class="backFace">?</h1>
+                    </div>
+
+                    <div class="cardNotEasy cardMedium cardHard card" data-framework="witch">
+                        <img class="frontFace" src="img/witch.png">
+                        <h1 class="backFace">?</h1>
+                    </div>
+
+                    <div class="cardNotEasy cardMedium cardHard card" data-framework="book">
+                        <img class="frontFace" src="img/book.png" id="bookImg">
+                        <h1 class="backFace">?</h1>
+                    </div>
+
+                    <div class="cardNotEasy cardMedium cardHard card" data-framework="book">
+                        <img class="frontFace" src="img/book.png" id="bookImg">
+                        <h1 class="backFace">?</h1>
+                    </div>
+
+                    <div class="cardNotEasy cardNotMedium cardHard card" data-framework="zombie">
+                        <img class="frontFace" src="img/zombie.png">
+                        <h1 class="backFace">?</h1>
+                    </div>
+
+                    <div class="cardNotEasy cardNotMedium cardHard card" data-framework="zombie">
+                        <img class="frontFace" src="img/zombie.png">
+                        <h1 class="backFace">?</h1>
+                    </div>
+
+                    <div class="cardNotEasy cardNotMedium cardHard card" data-framework="coffin">
+                        <img class="frontFace" src="img/coffin.png">
+                        <h1 class="backFace">?</h1>
+                    </div>
+
+                    <div class="cardNotEasy cardNotMedium cardHard card" data-framework="coffin">
+                        <img class="frontFace" src="img/coffin.png">
+                        <h1 class="backFace">?</h1>
+                    </div>
+
+                    <div class="cardNotEasy cardNotMedium cardHard card" data-framework="hat">
+                        <img class="frontFace" src="img/hat.png">
+                        <h1 class="backFace">?</h1>
+                    </div>
+
+                    <div class="cardNotEasy cardNotMedium cardHard card" data-framework="hat">
+                        <img class="frontFace" src="img/hat.png">
+                        <h1 class="backFace">?</h1>
+                    </div>
+                </div>
+
+                <div class="victoryScreen">
+                    <div class="victoryMessage">
+                        <img src="img/web.png">
+                        <h1>BUUH!!</h1>
+                        <h2>Parabéns, você terminou esse jogo da memória. Experimente jogar uma outra dificuldade ou
+                            jogue na mesma novamente.</h2>
+                        <button onClick="window.location.reload()">Jogar novamente</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div class="glow glowBottomLeft"></div>
+    <div class="glow glowTopRight"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
